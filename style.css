@@ -49,10 +49,6 @@ body{
   background-color: var(--DT-Very-Dark-Blue-BG);
 }
 
-main{
-  overflow-y: hidden;
-}
-
 .red-text{
   color: var(--PP-Bright-Red);
 }
@@ -89,7 +85,7 @@ main{
 }
 
 .left-hedaings p{
-  color: var(--LT-Dark-Grayish-Blue-Text);
+  color: var(--DT-Desaturated-Blue-Text);
   font-weight: var(--fw-fonts-weight-bold-700);
   font-size: .98rem;
   margin-bottom: 20px;
@@ -108,9 +104,14 @@ hr{
 }
 
 .right-headings p{
-  color: var(--LT-Dark-Grayish-Blue-Text);
+  color: var(--DT-Desaturated-Blue-Text);
   font-weight: var(--fw-fonts-weight-bold-700);
   font-size: .9rem;
+  transition: color .1s ease-in;
+}
+
+.right-headings p:hover{
+  color: var(--DT-White-Text);
 }
 
 .toogle-icon{
@@ -131,15 +132,15 @@ hr{
   width: 25px;
   height: 25px;
   /* transform: translateX(60); */
-  background-color: var(--LT-Very-Dark-Blue-Text);
+  background-color: var(--DT-Dark-Desaturated-Blue-Card-BG);
   border-radius: 50%;
-  transform: scale(.9);
+  transform: scale(.85);
   transition:all .3s ease-in-out;
   cursor: pointer;
 }
 
 .active{
-  left: 35px;
+  left: 33px;
 }
 
 .container-layout{
